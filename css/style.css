@@ -98,6 +98,20 @@ body {
 .header__item {
     color: var(--color-white);
     text-transform: uppercase;
+    transition: all 0.7s;
+}
+
+.header__item:after {
+    display: block;
+    content: "";
+    background-color: var(--color-white);
+    height: 1px;
+    width: 0;
+    border-radius: 6px;
+}
+
+.header__item:hover:after {
+    width: 100%;
 }
 
 .promo__description {
