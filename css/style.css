@@ -8,9 +8,11 @@
     --main-line-height: 1.5;
     --color-white: #fff;
     --color-yellow: #f2b705;
+    --color-dark-yellow: #B78A05FF;
     --color-dark-blue: #013f59;
     --color-blue-shadow: #02597f;
     --color-background: #f7f7f7;
+    --color-border-img: #e9eef2;
 }
 
 *,
@@ -65,7 +67,7 @@ body {
 .btn {
     margin-top: 30px;
     border: none;
-    background: var(--color-blue-shadow);
+    background: var(--color-yellow);
     color: var(--color-white);
     text-transform: uppercase;
     font-family: var(--main-font);
@@ -84,7 +86,7 @@ body {
 
 .btn:focus {
     box-shadow: inset 4px 7px 8px 0 rgba(1, 17, 66, 1);
-    background: var(--color-dark-blue);
+    background: var(--color-dark-yellow);
 }
 
 .promo {
@@ -92,6 +94,14 @@ body {
     min-height: 100vh;
     background: url('../img/bacground.jpg') no-repeat 50%/cover;
     padding-top: 40px;
+}
+
+.promo__btn {
+    background: var(--color-blue-shadow);
+}
+
+.promo__btn:focus {
+    background: var(--color-dark-blue);
 }
 
 .header {
@@ -229,6 +239,95 @@ body {
 .portfolio__item-image img {
     max-width: 100%;
 }
+
+.about {
+    padding: 60px 0;
+}
+
+.about__item {
+    margin-top: 100px;
+}
+
+.about__item-image {
+    position: relative;
+    text-align: center;
+
+}
+
+.about__item-img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid var(--color-border-img);
+}
+
+.about__item-image:after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 2px;
+    height: 110px;
+    background: var(--color-border-img);
+}
+
+.about__item-descr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about__item-left {
+    width: 465px;
+    text-align: right;
+    left: -150px
+}
+
+.about__item-left .about__title {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.about__item-left .about__subtitle {
+    text-align: right;
+    text-transform: capitalize;
+}
+.about__item-right {
+    width: 465px;
+    text-align: left;
+    left: 670px
+}
+
+.about__item-right .about__title {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about__item-right .about__subtitle {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.about__button {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.about__btn {
+    width: calc(250px - 26px);
+    height: calc(250px - 40px);
+    box-shadow: none;
+    border-radius: 100%;
+    border: 5px solid var(--color-border-img);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+
 
 @media(max-width: 1440px) {
     .container {
