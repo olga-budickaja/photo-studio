@@ -241,7 +241,7 @@ body {
 }
 
 .about {
-    padding: 60px 0;
+    padding: 160px 0;
 }
 
 .about__item {
@@ -326,7 +326,58 @@ body {
     font-weight: 800;
 }
 
+.team {
+    padding: 150px 0;
+    background: var(--color-background);
+}
 
+.team__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 285px);
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.team__item-image img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.team__item-descr {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team__item-social {
+    display: grid;
+    grid-template-columns: repeat(3, 55px);
+    grid-template-rows: 55px;
+    column-gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team__item-icon {
+    position: relative;
+    border: 3px solid #000;
+    border-radius: 100%;
+}
+
+.team__item-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #000;
+    width: 30px;
+    height: 30px;
+}
+
+.subtitle__bottom {
+    width: 825px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
 
 
 @media(max-width: 1440px) {
