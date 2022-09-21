@@ -7,6 +7,7 @@
         hamburger.classList.toggle("close");
     });
 
+
 // section About open text
 const aboutButton = document.querySelectorAll(".about__item-button");
 const aboutText = document.querySelectorAll(".about__item-text");

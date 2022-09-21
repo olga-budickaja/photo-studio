@@ -286,8 +286,18 @@ body {
     background: var(--color-white);
 }
 
-.portfolio__item-image img {
+.portfolio__item-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.portfolio__item-img {
     max-width: 100%;
+    transition: transform 0.25s;
+}
+
+.portfolio__item-image:hover .portfolio__item-img {
+    transform: scale(1.3);
 }
 
 .about {
