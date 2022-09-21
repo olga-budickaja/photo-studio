@@ -468,6 +468,23 @@ body {
     margin-top: 70px;
 }
 
+.brands {
+    padding: 100px 0;
+    /*background: var(--color-blue-shadow);*/
+}
+
+.brands__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.brands__img {
+    max-width: 100%;
+}
+
 
 @media(max-width: 1440px) {
     .container {
@@ -609,5 +626,8 @@ body {
     }
     .promo__title {
         line-height: 30px;
+    }
+    .subtitle__bottom {
+        padding: 0 20px;
     }
 }
