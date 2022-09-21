@@ -11,22 +11,32 @@
 </head>
 
 <body>
-<section class="promo">
+    <header class="header">
         <div class="container">
-            <header class="header">
-                <div class="header__logo">
-                    <img src="icons/logo.png" alt="logo" class="header__img">
-                </div>
-                <nav class="header__nav">
+            <nav class="header__nav">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <img src="icons/logo.png" alt="logo" class="header__img">
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span class="long"></span>
+                        <span></span>
+                    </div>
                     <ul class="header__menu">
-                        <li class="header__item">Home</li>
-                        <li class="header__item">Services</li>
-                        <li class="header__item">Portfolio</li>
-                        <li class="header__item">About</li>
-                        <li class="header__item">Contact</li>
+                        <li class="header__item"><a href="#">Home</a></li>
+                        <li class="header__item"><a href="#">Services</a></li>
+                        <li class="header__item"><a href="#">Portfolio</a></li>
+                        <li class="header__item"><a href="#">About</a></li>
+                        <li class="header__item"><a href="#">Contact</a></li>
                     </ul>
-                </nav>
-            </header>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+
             <div class="promo__description">
                 <div class="promo__subtitle">Welcome To Our Studio!</div>
                 <h1 class="promo__title">It`s nice to meet you</h1>
@@ -148,8 +158,11 @@
                 <div class="about__item-image">
                     <img src="img/about/about(1).jpg" alt="About us" class="about__item-img">
                     <div class="about__item-descr about__item-left">
-                        <div class="about__title title_fz18 title">Joly 2010</div>
-                        <div class="about__subtitle title_fz18 title">Our Humble Beginnings</div>
+                        <a href="#" class="about__item-button">
+                            <div class="about__title title_fz18 title">Joly 2010</div>
+                            <div class="about__subtitle title_fz18 title">Our Humble Beginnings</div>
+                        </a>
+
                         <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam</div>
                     </div>
                 </div>
@@ -158,8 +171,10 @@
                 <div class="about__item-image">
                     <img src="img/about/about(2).jpg" alt="About us" class="about__item-img">
                     <div class="about__item-descr about__item-right">
-                        <div class="about__title title_fz18 title">January 2011</div>
-                        <div class="about__subtitle title_fz18 title">Facing Startup Battles</div>
+                        <a href="#" class="about__item-button">
+                            <div class="about__title title_fz18 title">January 2011</div>
+                            <div class="about__subtitle title_fz18 title">Facing Startup Battles</div>
+                        </a>
                         <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam</div>
                     </div>
                 </div>
@@ -168,8 +183,10 @@
                 <div class="about__item-image">
                     <img src="img/about/about(3).jpg" alt="About us" class="about__item-img">
                     <div class="about__item-descr about__item-left">
-                        <div class="about__title title_fz18 title">December 2012</div>
-                        <div class="about__subtitle title_fz18 title">Enter the Dark Days</div>
+                        <a href="#" class="about__item-button">
+                            <div class="about__title title_fz18 title">December 2012</div>
+                            <div class="about__subtitle title_fz18 title">Enter the Dark Days</div>
+                        </a>
                         <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam</div>
                     </div>
                 </div>
@@ -178,8 +195,10 @@
                 <div class="about__item-image">
                     <img src="img/about/about(4).jpg" alt="About us" class="about__item-img">
                     <div class="about__item-descr about__item-right">
-                        <div class="about__title title_fz18 title">February 2014</div>
-                        <div class="about__subtitle title_fz18 title">Our triumph</div>
+                        <a href="#" class="about__item-button">
+                            <div class="about__title title_fz18 title">February 2014</div>
+                            <div class="about__subtitle title_fz18 title">Our triumph</div>
+                        </a>
                         <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minima nesciunt officia optio possimus quasi. Aliquam architecto beatae blanditiis debitis exercitationem illo iure natus quibusdam</div>
                     </div>
                 </div>
@@ -257,5 +276,13 @@
             <div class="subtitle subtitle__bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam expedita ipsa laudantium maxime minima nam nemo pariatur ullam velit voluptas!</div>
         </div>
     </section>
+
+    <section class="brands">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
