@@ -536,7 +536,8 @@ body {
         padding: 60px 0;
     }
     .about__item {
-        margin-top: 40px;
+        width: 210px;
+        margin: 40px auto 40px auto;
     }
     .about__item-img {
         filter: brightness(0.5);
@@ -547,11 +548,10 @@ body {
         color: var(--color-white);
     }
     .about__item-left {
-        left: 0;
+        left: -230px;
     }
     .about__item-right {
-        left: unset;
-        right: 0;
+        left: 15px;
     }
     .brands {
         padding: 60px 0;
@@ -576,12 +576,6 @@ body {
     }
     .promo__title {
         font-size: 24px;
-    }
-    .about__item-left {
-        left: -90px;
-    }
-    .about__item-right {
-        right: -90px;
     }
 }
 
@@ -629,5 +623,8 @@ body {
     }
     .subtitle__bottom {
         padding: 0 20px;
+    }
+    .about__item-text.open {
+        width: 250px;
     }
 }
