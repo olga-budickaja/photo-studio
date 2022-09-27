@@ -21,6 +21,26 @@
     box-sizing: border-box;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     :root {
         scroll-behavior: smooth;
@@ -65,6 +85,7 @@ body {
 }
 
 .btn {
+    position: relative;
     margin-top: 30px;
     border: none;
     background: var(--color-yellow);
@@ -77,6 +98,7 @@ body {
     border-radius: 4px;
     box-shadow: 4px 7px 8px 0 rgba(1, 17, 66, 1);
     transition: all .5s;
+    z-index: 10;
 }
 
 .btn:hover {
@@ -135,6 +157,10 @@ body {
     min-height: 100vh;
     background: url('../img/bacground.jpg') no-repeat 50%/cover;
     z-index: -1;
+}
+
+.promo__description {
+    z-index: 10;
 }
 
 .promo__btn {
@@ -342,6 +368,7 @@ body {
     transform: translateY(-50%);
 }
 
+
 .about__item-button {
     color: var(--main-font-color);
     text-decoration: none;
@@ -407,7 +434,6 @@ body {
     padding: 20px;
     background: var(--color-white);
     box-shadow: 4px 7px 8px 0 rgba(1, 17, 66, 1);
-    z-index: 1;
 }
 
 .about__item-left .about__item-text.open {
